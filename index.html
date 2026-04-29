@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Burguer & Chopp - Cardápio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body { background-color: #1a1a1a; color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+      .navbar { border-bottom: 2px solid #c78c0c; }
+      .card-item { background-color: #262626; border: 1px solid #3d3d3d; border-radius: 15px; overflow: hidden; transition: 0.3s; }
+      .card-item:hover { transform: translateY(-5px); border-color: #c78c0c; }
+      .price-badge { background-color: #c78c0c; color: #000; font-weight: bold; padding: 5px 15px; border-radius: 20px; }
+      .section-title { color: #c78c0c; border-left: 5px solid #c78c0c; padding-left: 15px; margin: 30px 0; }
+      .img-burger { border-radius: 10px; object-fit: cover; }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand text-warning fw-bold" href="#">BURGUER CLAN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Cardápio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Carrinho</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-5">
+      <div class="text-center mb-5">
+        <img src=".//e115fdf3d469ffde5e67ed98d3349131.jpg" alt="Logo" class="img-fluid rounded-circle shadow" style="width: 150px; height: 150px; border: 3px solid #c78c0c;">
+      </div>
+
+      <h2 class="section-title">Nossos Hamburgueres</h2>
+      
+      <div class="card-item p-3 mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center">
+            <img src=".//230446-730x365.jpg" class="img-fluid img-burger mb-3 mb-md-0" alt="Hamburguer Duplo">
+          </div>
+          <div class="col-md-5">
+            <h4 class="text-warning">Duplo Artesanal</h4>
+            <p class="text-secondary italic">Pão brioche, 2 carnes artesanais, bacon, maionese temperada e muito cheddar.</p>
+          </div>
+          <div class="col-md-3 text-center border-start border-secondary">
+            <div class="mb-2">100g: <span class="price-badge">R$ 22,90</span></div>
+            <div>160g: <span class="price-badge">R$ 29,90</span></div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title">Chopps Gelados</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card-item p-4 text-center">
+            <h5>300ml</h5>
+            <h3 class="text-warning">R$ 7,90</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-item p-4 text-center">
+            <h5>500ml</h5>
+            <h3 class="text-warning">R$ 12,90</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-item p-4 text-center">
+            <h5>700ml</h5>
+            <h3 class="text-warning">R$ 15,90</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
